@@ -2,43 +2,20 @@
 <html lang="sq">
 <head>
 <meta charset="UTF-8">
-<title>Website-i im i parë online!</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-text-align: center;
-background-color: #f4f4f9;
-margin-top: 50px;
-}
-h1 {
-color: #333;
-}
-button {
-padding: 10px 20px;
-font-size: 16px;
-background-color: #007bff;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-button:hover {
-background-color: #0056b3;
-}
-</style>
+<title>Mini Learning Page</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Përshëndetje! Ky është website-i im i parë.</h1>
-<p>Krijuar me HTML, CSS dhe JavaScript.</p>
+<h1>Pyetje nga Bazat e Programimit</h1>
+<p>Cila gjuhë përdoret për të bërë një faqe interaktive me funksionalitet?</p>
 
-<button onclick="shfaqMesazhin()">Kliko këtu</button>
+<button onclick="kontrollo('HTML')">A) HTML</button>
+<button onclick="kontrollo('CSS')">B) CSS</button>
+<button onclick="kontrollo('JS')">C) JavaScript</button>
 
-<script>
-function shfaqMesazhin() {
-alert("Urime! Butoni juaj po funksionon me sukses!");
-}
-</script>
+<h2 id="mesazhi"></h2>
 
+<script src="script.js"></script>
 </body>
 </html>
